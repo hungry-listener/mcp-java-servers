@@ -3,10 +3,7 @@ package com.ekagra.mcpstarter.controller;
 import com.ekagra.mcpstarter.model.MCPMessage;
 import com.ekagra.mcpstarter.model.MCPResponse;
 import com.ekagra.mcpstarter.service.QueryService;
-
-import dev.langchain4j.rag.query.Query;
 import jakarta.validation.Valid;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

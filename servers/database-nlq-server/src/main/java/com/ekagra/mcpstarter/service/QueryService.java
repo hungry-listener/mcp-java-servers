@@ -77,19 +77,14 @@ public class QueryService implements QueryLLMService{
             responseDTO = objectMapper.readValue(llmResponse, LLMResponse.class);
             
         } catch (JsonMappingException e) {
-            // JSON structure was wrong
-            logger.error("Failed to map LLM response to MCPResponse. Invalid structure.", e);
-            
-            // Optionally, set a fallback
-            responseDTO.setSqlQuery("");
-            responseDTO.setResponseText("Failed to generate a valid response. Please try again.");
-            
+            // JSON structure was wrong (e.g., missing fields, wrong types)
+            logger.error("Failed to map LLM response to LLMResponse DTO. Invalid structure.", e);
+            throw new RuntimeException("Failed to map LLM response. Invalid JSON structure.", e);
+        
         } catch (JsonProcessingException e) {
-            // LLM response was not valid JSON
+            // General JSON processing error (invalid format, unreadable content)
             logger.error("Failed to parse LLM response JSON.", e);
-            
-            responseDTO.setSqlQuery("");
-            responseDTO.setResponseText("Invalid response format received from LLM.");
+            throw new RuntimeException("Failed to parse LLM response. Invalid JSON format.", e);
         }
 
 

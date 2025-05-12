@@ -20,20 +20,17 @@ Each server is designed to act as a **starter pack**, offering practical example
 ```plaintext
 mcp-java-servers/
 │
-├── database-server/ # MCP server for interacting with databases (e.g., MySQL)
+├── database-nql-server/ # MCP server for interacting with databases (e.g., MySQL)
 │ └── README.md # Detailed instructions for the database server
 │
 ├── email-server/ # MCP server for handling email-related actions
-│ └── README.md # Detailed instructions for the email server
-│
-└── shared-libraries/ # (optional) Common libraries/utilities reused across servers
+  └── README.md # Detailed instructions for the email server
+
 ```
 
 ✅ **Each server** will be a **standalone Spring Boot application**, designed following microservices principles.
 
 ✅ **Each server** has its **own README.md** file with detailed setup instructions, usage examples, and API endpoints.
-
-✅ **Shared code** (if any) will go into a `shared-libraries/` module for reusability across different servers.
 
 ---
 
@@ -53,7 +50,6 @@ mcp-java-servers/
 - **LangChain4j** for LLM interactions
 - **MCP Model Definitions**
 - **JDBC / JPA** for database connectivity
-- **OpenAPI / Swagger** (optional) for documenting APIs
 - **Docker** (optional) for containerization (future)
 - **CI/CD pipelines** (future)
 
@@ -67,7 +63,7 @@ Please navigate to the respective server folder and check the individual **`READ
 Example:
 
 ```bash
-cd database-server
+cd database-nql-server
 cat README.md
 ```
 ---
