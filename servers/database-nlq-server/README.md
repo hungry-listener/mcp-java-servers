@@ -42,7 +42,7 @@ database-nlq-server/
 ```json
 {
   "tableName":"HDFCBANK",
-  "query":"What was the hdfc bank closing price on 23 july 2024?" 
+  "query":"What was the hdfc bank closing price on 22 july 2024?"
 }
 ```
 2. Server:
@@ -55,14 +55,14 @@ database-nlq-server/
 3. Example Response:
 ```json
     {
-    "sqlQuery": "SELECT close FROM HDFCBANK WHERE date = '2024-07-23';",
-    "responseText": "This query retrieves the closing price of HDFC Bank on July 23, 2024.",
+    "sqlQuery": "SELECT close FROM HDFCBANK WHERE date = '2024-07-22';",
+    "responseText": "The closing price of HDFC Bank on 22 July 2024 was retrieved from the database.",
     "queryResult": [
         {
-            "close": 1618.40
+            "close": 1642.55
         }
     ]
-}
+  }
 ```
 ---
 
