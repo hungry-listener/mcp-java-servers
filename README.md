@@ -16,6 +16,8 @@ Each server is designed to act as a **starter pack**, offering practical example
 
 ## 🏗️ Repository Structure
 
+
+```plaintext
 mcp-java-servers/
 │
 ├── database-server/ # MCP server for interacting with databases (e.g., MySQL)
@@ -25,7 +27,7 @@ mcp-java-servers/
 │ └── README.md # Detailed instructions for the email server
 │
 └── shared-libraries/ # (optional) Common libraries/utilities reused across servers
-
+```
 
 ✅ **Each server** will be a **standalone Spring Boot application**, designed following microservices principles.
 
