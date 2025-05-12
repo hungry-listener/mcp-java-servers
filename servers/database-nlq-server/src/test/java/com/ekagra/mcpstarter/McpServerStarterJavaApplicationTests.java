@@ -1,4 +1,4 @@
-package com.ekagra.mcp_server_starter_java;
+package com.ekagra.mcpstarter;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
