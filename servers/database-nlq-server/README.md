@@ -41,8 +41,8 @@ database-nlq-server/
 1. User sends a POST request with:
 ```json
 {
-  "tableName": "stocks",
-  "query": "What was the closing price on July 22, 2024?"
+  "tableName":"HDFCBANK",
+  "query":"What was the hdfc bank closing price on 23 july 2024?" 
 }
 ```
 2. Server:
