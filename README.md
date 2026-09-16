@@ -36,7 +36,7 @@ mcp-java-servers/
 
 ## 📌 Goals
 
-- Provide **real-world working examples** of MCP server implementations.
+- Provides **real-world working examples** of MCP server implementations.
 - Help developers **quickly set up** new MCP-compliant services.
 - Serve as a **launchpad** for more advanced, production-grade MCP servers in Java.
 - Showcase **clean architecture, modular design, and scalability**.
